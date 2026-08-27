@@ -11,10 +11,10 @@ services:
     autoDeploy: true
     envVars:
       - key: OWNER_NUMBER
-        sync: false
+        sync: true
       - key: BOT_NAME
-        sync: false
+        sync: true
       - key: BOT_IMAGE_URL
-        sync: false
+        sync: true
       - key: PORT
         value: 3000
