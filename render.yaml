@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: king-xd-bot
+    env: node
+    plan: free
+    buildCommand: |
+      apt-get update && apt-get install -y ffmpeg python3 python3-pip
+      pip3 install yt-dlp
+      npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: OWNER_NUMBER
+        sync: false
+      - key: BOT_NAME
+        sync: false
+      - key: BOT_IMAGE_URL
+        sync: false
+      - key: PORT
+        value: 3000
