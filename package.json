@@ -1,0 +1,23 @@
+{
+  "name": "king-xd-bot",
+  "version": "3.0.0",
+  "description": "Professional WhatsApp Multi-Device Bot with Downloader, Group Manager, Protection & Web Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.8",
+    "express": "^4.18.2",
+    "pino": "^8.15.0",
+    "qrcode": "^1.5.3",
+    "socket.io": "^4.7.2",
+    "yt-dlp-wrap": "^2.3.12",
+    "sharp": "^0.33.2",
+    "axios": "^1.6.2",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
